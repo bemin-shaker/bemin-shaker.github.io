@@ -1,3 +1,4 @@
+
 .navbar {
   background-color: White;
   position: fixed;
@@ -9,7 +10,7 @@
 
 .navbar li {
   display: inline-block;
-  padding: 10px 20px;
+  padding: 20px 20px;
 }
 
 .navbar a {
@@ -20,11 +21,11 @@
 .header {
   text-align: center;
   background-color: #4D00FF;
-  padding: 90px 60px;
+  padding: 90px 40px;
 }
 
 .about-me {
-  font-size: 40px;
+  font-size: 20px;
 
 }
 
@@ -41,12 +42,16 @@
 h1 {
   color: White;
   font-size: 80px;
-  font-family: monospace;
+  font-family: "Verdana";
+  font-weight: 100;
+  line-height: .5;
 }
 
 .about-me, nav {
   color: White;
   font-family: monospace;
+  line-height: .1;
+
 }
 
 .proj-section {
@@ -67,4 +72,5 @@ a.blue {
 
 #projlist ul {
   list-style-type: none;
+  font-size: 24px;
 }
