@@ -1,0 +1,70 @@
+.navbar {
+  background-color: White;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.navbar li {
+  display: inline-block;
+  padding: 10px 20px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: Black;
+}
+
+.header {
+  text-align: center;
+  background-color: #4D00FF;
+  padding: 90px 60px;
+}
+
+.about-me {
+  font-size: 20px;
+
+}
+
+.title {
+  font-weight: bold;
+}
+
+.profile {
+  height: 200px;
+  width: 200px;
+
+}
+
+h1 {
+  color: White;
+  font-size: 80px;
+  font-family: monospace;
+}
+
+.about-me, nav {
+  color: White;
+  font-family: monospace;
+}
+
+.proj-section {
+  padding: 20px 50px;
+}
+
+body {
+  text-align:
+  font-family: Georgia;
+  color: Black;
+  background-color: #F8F8F8;
+}
+
+a.blue {
+  color: #4D00FF;
+
+}
+
+#projlist ul {
+  list-style-type: none;
+}
