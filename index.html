@@ -6,20 +6,27 @@
   <link href="style.css" type="text/css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Mukta:700|PT+Serif" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css">
+  <link rel="icon" href="./favicon.ico" type="image/x-icon">
 </head>
 
 <body>
   <nav class="navbar">
     <ul id="navigate">
-      <li><a class="blue" href="">Home</a></li>
+      <li><a class="blue" href="#head">Home</a></li>
       <li><a  href="#aboutme">About Me</a></li>
       <li><a href="#projsec">Projects</a></li>
       <li><a target="_blank" href="file:///C:/Users/bemin.LAPTOP-63V72TQ9/Downloads/Shaker_Bemin_COOP_1.pdf">Resume</a></li>
-      <li><a href="#contactme">Contact</a></li>
+      <li><a href="#contact-me">Contact</a></li>
     </ul>
+  <div id="social-icons">
+    <a target='_blank' href='https://www.linkedin.com/in/beminshaker/'><i id='socialitem' class="fa fa-linkedin fa-lg" style="color:white"></i></a>
+    <a target='_blank' href='https://github.com/bemin-shaker'><i id='socialitem' class="fa fa-github fa-lg" style="color:white"></i></a>
+    <a target='_blank' href='mailto:beminshaker@gmail.com'><i id='socialitem' class="fa fa-envelope fa-lg" style="color:white"></i></a>
+  </div>
   </nav>
 
-  <div class="header">
+  <div id="head" class="header">
     <img class="profile" src="https://pbs.twimg.com/profile_images/1153141666787811334/6CLxXfyS_400x400.jpg" />
     <h1>Bemin Shaker</h1>
     <p class="about-me">I am a developer specializing in JavaScript, HTML and CSS. </p>
@@ -39,6 +46,7 @@
 <div class="proj-section" id="projsec">
 
     <h2>Projects</h2>
+	<p>Check back soon :) </p>
 
     <div class="gallery">
       
@@ -54,24 +62,47 @@
       <figure class="gallery-item">
         <img class="thumbnail" src="https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-3/space05.jpg">
       </figure>
-      <figure class="gallery-item">
-        <img class="thumbnail" src="https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-3/space06.jpg">
-      </figure>
     </div>
 </div>
 
 
-  <div class="footer">
-    <h2 id="contactme">Contact</h2>
-    <!--p>Find me on: <a target="_blank" href="https://twitter.com/bemin_shaker"> Twitter </a> | <a target="_blank" href="https://www.linkedin.com/in/beminshaker/"> LinkedIn </a>| <a href="https://github.com/bemin-shaker" target="_blank">GitHub</a></p-->
+  <div id="contact-me" class="footer">
 
-    <ul id="lpro">
-       <li><a href="mailto:beminshaker@gmail.com?subject=\Message from Site\" target="_blank"><div class="twicon"><img id="social_me" src="./Picture1.png"</a></li>
-       <li><a href="https://www.linkedin.com/in/beminshaker/" target="_blank"><div class="linkedin"><img id="social_me" src="https://www.itl.cat/pngfile/big/210-2103667_linkedin-transparent-tiny-linkedin-icon-white-png.png"></a></li>
-       <li><a href="https://github.com/bemin-shaker" target="_blank"><img id="social_me" src="https://www.nicepng.com/png/full/52-520535_free-files-github-github-icon-png-white.png"></a></li>
-    </ul>
+<h2 id="contact-title">Contact Me</h2>
 
-    <h6>&copy; Copyright. All Rights Reserved.</h6>
+    <form id='contactform'>
+	<h3 id="form-title">Let's chat!</h3>
+
+      <div id='form-item1'>
+       <label for='name1'>Name:</label>
+       <input type='text' name='name'id='name1'>
+	<br>
+      </div>
+      <div id='form-item'>
+       <label for='email1'>Email:</label>
+       <input type='text' name='email'id='email1'>
+	<br>
+      </div>
+      <div id='form-item'>
+       <label for='phone1'>Phone:</label>
+       <input type='number' name='phone'id='phone1'>
+	<br>
+      </div>
+      <div id='form-item'>
+       <label for='message1'>Message:</label>
+<br>
+       <textarea rows='10' cols='40'type='text' name='message'id='message1'></textarea>
+	<br>
+	<br>
+
+	<form >
+  <input type="submit" value="Send">
+	</form>
+ 
+    </form>	
+      </div>
+
+    <h6>&copy;Bemin Shaker</h6>
   </div>
 
 <script src="./main.js" >
