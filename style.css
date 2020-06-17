@@ -4,8 +4,8 @@
 }
 
 
-/* Body */
 
+/* Body */
 body {
   font-family: Montserrat;
   color: #2c3e50;
@@ -16,13 +16,12 @@ html,body
     width: 100%;
     margin: 0px;
     padding: 0px;
-    overflow-x: hidden; 
-  
+    overflow-x: hidden;
+
 }
 
 
 /* Navigation Bar */
-
 .navbar {
   background-color: #2c3e50;
   position: fixed;
@@ -32,11 +31,14 @@ html,body
   font-weight: bold;
   font-family: Mukta, sans-serif;
   display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+  z-index: 1;
 }
 
 .navbar li {
   display: inline-block;
-  padding: 0px 20px;
+  padding: 0px 15px;
 }
 
 .navbar a {
@@ -45,32 +47,89 @@ html,body
 }
 
 #navigate {
-   padding: 2px 35px;
+   padding: 0px;
+   padding-right: 5px;
+   padding-left: 35px;
+
 }
 
 #social-icons {
-   padding-top: 20px;
-   padding-bottom: 20px;
-   padding-left: 430px;
-
+   position: abosulute;
    display: inline-block;
-
+   padding: 15px;
+   padding-left: 5px;
+   padding-right: 50px;
 }
 
 #socialitem {
-   padding: 0px 15px;
+   padding-left: 30px;
+}
+
+#mobile-nav {
+  position: fixed;
+  width: 100%;
+  background-color: #2c3e50;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Dropdown Button */
+.dropbtn {
+  background-color: #D2B48C;
+  color: #2c3e50;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  background-image: url("https://www.transparenttextures.com/patterns/60-lines.png");
 
 }
 
-/* Header */
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #2980B9;
+  color: white;
+}
 
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+
+
+/* Header */
 .header {
   text-align: center;
   background-color: White;
   height: 600px;
   padding-top: 120px;
   padding-bottom:120px;
-  margin-top: 70px;
+  margin-top: 50px;
 }
 
 .title {
@@ -91,7 +150,8 @@ h1 {
   font-family: Mukta, sans-serif;
   font-weight: 200;
   line-height: 1.8;
-  
+  padding-left: 7px;
+  padding-right: 7px;
 }
 
 .about-me, nav {
@@ -104,99 +164,165 @@ h1 {
 
 
 /* About Me Section */
-
 #aboutme {
   padding: 65px 50px;
   background-color: #F8F8F8;
-  
+
 }
 
 #aboutpar {
   max-width: 960px;
-  font-size: 20px;
-  margin-bottom: 250px;
+  font-size: 1.2em;
+  margin-bottom: 20px;
   font-family: "PT Serif";
+
 }
 
 /* Project Section */
-
 .proj-section {
   padding: 65px 50px;
-  background-color: #D2B48C;
-}
-
-
-/* Gallery */
-
-.gallery {
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: 40px;
-  margin-bottom: 20px;
-
-  align-content: space-between;
-}
-
-.gallery-item {
-  margin: 5px;
+  /*background-color: #D2B48C;*/
+  background-color: #d2b48c;
+  background-image: url("https://www.transparenttextures.com/patterns/60-lines.png");
 
 }
 
-.gallery-item .thumbnail {
-  width: 500px;
-  
-  
+
+
+
+.row {
+  margin: 8px -16px;
+
+}
+
+/* Add padding BETWEEN each column (if you want) */
+.row,
+.row, .column {
+  padding: 4px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+
+}
+
+/* Clear floats after rows */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: ;
+  padding: 10px;
+}
+
+
+
+
+
+/*For Laptop and Tablet Devices > 601px */
+@media screen and (min-width: 601px) {
+
+  .footer {
+    padding: 50px 50px 5px 50px;
+  }
+
+  .column {
+    width: 100%;
+  }
+
+}
+
+/*For Mobile Devices < 600px */
+@media screen and (max-width: 600px) {
+  .profile {
+    height: 100px;
+    width: 100px;
+  }
+  .footer, .proj-section, #aboutme {
+    padding: 40px 5px 1px 5px;
+  }
+
+  #social-icons {
+    padding: 15px 15px 15px 5px;
+  }
+
+  #aboutpar {
+    font-size: 1.1em;
+  }
+
+  .about-me {
+    font-size: 14px;
+  }
+
+  h1 {
+    font-size: 35px;
+  }
+
+  .section-title {
+    text-align: center;
+    font-size: 22px;
+  }
+
+  .navbar {
+    display: none;
+  }
+
+  .column {
+    width: 100%;
+  }
+
 }
 
 
 /* Footer */
-
 .footer {
   background-color: #2c3e50;
   width: 100%;
-  padding-top: 50px;
-  padding-left: 50px;
-  padding-bottom: 10px;
   color: White;
-  font-family: Montserrat;
-}
-
-form {
-  background-color: #D2B48C;
-  width: 35%;
-  padding: 35px;
-  color: #2c3e50;
-  line-height: 20px;
-  
-}
-
-
-#form-item, #form-item1 {
-  margin-bottom: 20px;
-  font-size: 18px;
-}
-
-#form-item1 {
-  padding-top: 10px;
-}
-
-input{
-  padding-right: 60px;
-  padding-top: 5px;
-  font-size: 15px;
-}
-
-#message1 {
-  margin-top: 15px;
 }
 
 h6 {
-  font-weight: normal;
-  font-size: 13px;
-  
+  font-weight: lighter;
+  text-align: center;
 }
 
-#form-title {
-  margin-top: 5px;
+/*Form Section*/
+.form-container {
+  border-radius: 5px;
+  background-color: #d2b48c;
+  color: #2c3e50;
+  background-image: url("https://www.transparenttextures.com/patterns/60-lines.png");
+  padding: 20px;
+
 }
 
+input[type=text], input[type=number], textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc; /
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+/* Submit Button for Form */
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}

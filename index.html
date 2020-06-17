@@ -1,114 +1,138 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-  <title>Bemin Shaker</title>
-  <link href="style.css" type="text/css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Mukta:700|PT+Serif" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css">
-  <link rel="icon" href="./favicon.ico" type="image/x-icon">
-</head>
+  <head>
 
-<body>
-  <nav class="navbar">
+    <title>Bemin Shaker</title>
+
+    <link href="style.css" type="text/css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Mukta:700|PT+Serif" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  </head>
+
+
+  <body>
+
+    <nav class="navbar">
     <ul id="navigate">
-      <li><a class="blue" href="#head">Home</a></li>
-      <li><a  href="#aboutme">About Me</a></li>
-      <li><a href="#projsec">Projects</a></li>
-      <li><a target="_blank" href="file:///C:/Users/bemin.LAPTOP-63V72TQ9/Downloads/Shaker_Bemin_COOP_1.pdf">Resume</a></li>
-      <li><a href="#contact-me">Contact</a></li>
+        <li><a  href="#aboutme">About Me</a></li>
+        <li><a href="#projsec">Projects</a></li>
+        <li><a target="_blank" href="file:///C:/Users/bemin.LAPTOP-63V72TQ9/Downloads/Shaker_Bemin_COOP_1.pdf">Resume</a></li>
+        <li><a href="#contact-me">Contact</a></li>
     </ul>
-  <div id="social-icons">
-    <a target='_blank' href='https://www.linkedin.com/in/beminshaker/'><i id='socialitem' class="fa fa-linkedin fa-lg" style="color:white"></i></a>
-    <a target='_blank' href='https://github.com/bemin-shaker'><i id='socialitem' class="fa fa-github fa-lg" style="color:white"></i></a>
-    <a target='_blank' href='mailto:beminshaker@gmail.com'><i id='socialitem' class="fa fa-envelope fa-lg" style="color:white"></i></a>
+
+
+    <div id="social-icons">
+        <a target='_blank' href='https://www.linkedin.com/in/beminshaker/'><i id='socialitem' class="fa fa-linkedin fa-lg" style="color:#D2B48C"></i></a>
+        <a target='_blank' href='https://github.com/bemin-shaker'><i id='socialitem' class="fa fa-github fa-lg" style="color:#D2B48C"></i></a>
+        <a target='_blank' href='mailto:beminshaker@gmail.com'><i id='socialitem' class="fa fa-envelope fa-lg" style="color:#D2B48C"></i></a>
+    </div>
+
+    </nav>
+
+  <div id='mobile-nav'>
+    <div class="dropdown">
+    <button onclick="myFunction()" class="dropbtn">Home</button>
+      <div id="myDropdown" class="dropdown-content">
+        <a href="#aboutme">About Me</a>
+        <a href="#projsec">Projects</a>
+        <a href="#contact-me">Contact</a>
+      </div>
+    </div>
+
+    <div id="social-icons">
+        <a target='_blank' href='https://www.linkedin.com/in/beminshaker/'><i id='socialitem' class="fa fa-linkedin fa-lg" style="color:#D2B48C"></i></a>
+        <a target='_blank' href='https://github.com/bemin-shaker'><i id='socialitem' class="fa fa-github fa-lg" style="color:#D2B48C"></i></a>
+        <a target='_blank' href='mailto:beminshaker@gmail.com'><i id='socialitem' class="fa fa-envelope fa-lg" style="color:#D2B48C"></i></a>
+    </div>
   </div>
-  </nav>
 
-  <div id="head" class="header">
-    <img class="profile" src="https://pbs.twimg.com/profile_images/1153141666787811334/6CLxXfyS_400x400.jpg" />
-    <h1>Bemin Shaker</h1>
-    <p class="about-me">I am a developer specializing in JavaScript, HTML and CSS. </p>
-  </div>
+    <div class="header">
+      <img class="profile" src="https://pbs.twimg.com/profile_images/1153141666787811334/6CLxXfyS_400x400.jpg" />
+      <div id='title-design'>
+        <h1>Bemin Shaker</h1>
+      </div>
+      <p class="about-me">I am an aspiring developer specializing in JavaScript, HTML and CSS. </p>
+    </div>
 
-<div id="aboutme">
-    <h2>About Me</h2>
-  <div id="aboutpar">
-    <p>Hello! I'm glad you found my page! </p>
-    <p>I am a software engineering student located in the New York City area.</>
-    <p>I have strong leadership and teamwork experience as a result of my involvement with various projects and organizations. I want to help create new, more modern technologies that not only improve the lives of people, but make a real impact.</p>
-    <p>I love to code! During my free time, I am either learning a new programming language or working on a fun project. Recently, I have been exploring the web development field. I am working on this personal website as I learn.</p>
-    <p>Programming Skills: JavaScript, HTML/CSS, Python, SQL </p>
-  </div>
-</div>
+    <div id="aboutme">
+      <h2 class='section-title'>About Me</h2>
+      <div id="aboutpar">
+        <p>Hello! I'm glad you found my page! </p>
+        <p>I am a software engineering student located in the New York City area.</>
+        <p>I have strong leadership and teamwork experience as a result of my involvement with various projects and organizations. I want to help create new, more modern technologies that not only improve the lives of people, but make a real impact.</p>
+        <p>I love to code! During my free time, I am either learning a new programming language or working on a fun project. Recently, I have been exploring the web development field. I am working on this personal website as I learn.</p>
+        <p>Programming Skills: JavaScript, HTML/CSS, Python, SQL </p>
+      </div>
+    </div>
 
-<div class="proj-section" id="projsec">
 
-    <h2>Projects</h2>
-	<p>Check back soon :) </p>
+    <div class="proj-section" id="projsec">
+      <h2 class='section-title'>Projects</h2>
+  	<p>Check back soon :) </p>
 
-    <div class="gallery">
-      
-      <figure class="gallery-item">
-        <img class="thumbnail" src="https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-3/space02.jpg">
-      </figure>
-      <figure class="gallery-item">
-        <img class="thumbnail" src="https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-3/space03.jpg">
-      </figure>
-      <figure class="gallery-item">
-        <img class="thumbnail" src="https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-3/space04.jpg">
-      </figure>
-      <figure class="gallery-item">
-        <img class="thumbnail" src="https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-3/space05.jpg">
-      </figure>
+
+          <!-- Portfolio Gallery Grid -->
+      <div class="row">
+      <div class="column">
+        <div class="content">
+          <img src="https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-3/space02.jpg" alt="Mountains" style="width:100%">
+          <h3>My Work</h3>
+          <p>Lorem ipsum..</p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="content">
+          <img src="https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-3/space02.jpg" alt="Lights" style="width:100%">
+          <h3>My Work</h3>
+          <p>Lorem ipsum..</p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="content">
+          <img src="https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-3/space02.jpg" alt="Nature" style="width:100%">
+          <h3>My Work</h3>
+          <p>Lorem ipsum..</p>
+        </div>
+      </div>
+
     </div>
 </div>
 
+    <div id="contact-me" class="footer">
 
-  <div id="contact-me" class="footer">
+      <h2 class='section-title' id="contact-title">Contact Me</h2>
 
-<h2 id="contact-title">Contact Me</h2>
-
-    <form id='contactform'>
-	<h3 id="form-title">Let's chat!</h3>
-
-      <div id='form-item1'>
-       <label for='name1'>Name:</label>
-       <input type='text' name='name'id='name1'>
-	<br>
-      </div>
-      <div id='form-item'>
-       <label for='email1'>Email:</label>
-       <input type='text' name='email'id='email1'>
-	<br>
-      </div>
-      <div id='form-item'>
-       <label for='phone1'>Phone:</label>
-       <input type='number' name='phone'id='phone1'>
-	<br>
-      </div>
-      <div id='form-item'>
-       <label for='message1'>Message:</label>
-<br>
-       <textarea rows='10' cols='40'type='text' name='message'id='message1'></textarea>
-	<br>
-	<br>
-
-	<form >
-  <input type="submit" value="Send">
-	</form>
- 
-    </form>	
+      <div class="form-container">
+        <form action="action_page.php">
+          <label for="1name">Name</label>
+          <input type="text" id="fname" name="name" placeholder="Your name..">
+          <label for="1phone">Phone</label>
+          <input type="number" id="lphone" name="phone" placeholder="Your phone number..">
+          <label for="1email">Last Name</label>
+          <input type="text" id="lemail" name="email" placeholder="Your email address..">
+          <label for="1message">Message</label>
+          <textarea id="1message" name="meesage" placeholder="Write something.." style=" font-family: Montserrat; height:200px"></textarea>
+          <input type="submit" value="Submit">
+        </form>
       </div>
 
-    <h6>&copy;Bemin Shaker</h6>
-  </div>
+        <h6>&copy; Bemin Shaker</h6>
+    </div>
 
-<script src="./main.js" >
-</script>
 
-</body>
+    <script src="./main.js">
+    </script>
+
+  </body>
 
 
 </html>
