@@ -25,8 +25,9 @@
     <ul id="navigate">
         <li><a  href="#aboutme">About Me</a></li>
         <li><a href="#projsec">Projects</a></li>
-        <li><a target="_blank" href="file:///C:/Users/bemin.LAPTOP-63V72TQ9/Downloads/Shaker_Bemin_COOP_1.pdf">Resume</a></li>
         <li><a href="#contact-me">Contact</a></li>
+        <li><a target="_blank" href="resume.pdf">Resume</a></li>
+
     </ul>
 
 
@@ -40,11 +41,12 @@
 
   <div id='mobile-nav'>
     <div class="dropdown">
-    <button onclick="myFunction()" class="dropbtn"><i class="fa fa-bars fa-lg"  ></i></button>
+    <button onclick="myFunction()" class="dropbtn"><i class="fa fa-bars fa-lg"></i></button>
       <div id="myDropdown" class="dropdown-content">
         <a href="#aboutme">About Me</a>
         <a href="#projsec">Projects</a>
         <a href="#contact-me">Contact</a>
+        <a target="_blank" href="resume.pdf">Resume</a>
       </div>
     </div>
 
@@ -63,7 +65,7 @@
       <p class="about-me">I am an aspiring developer specializing in JavaScript, HTML and CSS. </p>
     </div>
 
-    <div id="aboutme">
+    <div  id="aboutme">
       <h2 class='section-title'>About Me</h2>
       <div id="aboutpar">
         <p>Hello! I'm glad you found my page! </p>
@@ -80,7 +82,7 @@
   	<p>Check back soon :) </p>
 
 
-          <!-- Portfolio Gallery Grid -->
+          <!-- Portfolio Gallery Grid
       <div class="row">
       <div class="column">
         <div class="content">
@@ -103,8 +105,8 @@
           <p>Lorem ipsum..</p>
         </div>
       </div>
-
-    </div>
+      </div>
+      -->
 </div>
 
     <div id="contact-me" class="footer">
@@ -112,16 +114,16 @@
       <h2 class='section-title' id="contact-title">Contact Me</h2>
 
       <div class="form-container">
-        <form action="action_page.php">
+        <form post” name=”contact_form” action=”contact-form-handler.php”>
           <label for="1name">Name</label>
           <input type="text" id="fname" name="name" placeholder="Your name.." style=" font-family: Montserrat">
           <label for="1phone">Phone</label>
           <input type="number" id="lphone" name="phone" placeholder="Your phone number.." style=" font-family: Montserrat">
-          <label for="1email">Last Name</label>
+          <label for="1email">Email</label>
           <input type="text" id="lemail" name="email" placeholder="Your email address.." style=" font-family: Montserrat">
           <label for="1message">Message</label>
           <textarea id="1message" name="meesage" placeholder="Write something.." style=" font-family: Montserrat; height:150px"></textarea>
-          <input type="submit" value="Submit">
+          <input type="submit" value="Submit" style=" font-family: Montserrat">
         </form>
       </div>
 
