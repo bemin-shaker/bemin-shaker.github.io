@@ -175,7 +175,6 @@ h1 {
   #aboutme {
   padding: 65px 50px;
   background-color: #F8F8F8;
-
 }
 
 #aboutpar {
@@ -185,6 +184,7 @@ h1 {
   font-family: "PT Serif";
 
 }
+
 
 /* Project Section */
 .proj-section {
@@ -254,9 +254,6 @@ h1 {
     padding: 40px 5px 50px 5px;
   }
 
-  .footer {
-    padding: 40px 10px 5px 10px;
-  }
 
   .footer {
       padding: 40px 5px 1px 5px;
@@ -292,7 +289,6 @@ h1 {
   }
 
 
-
 }
 
 
@@ -301,7 +297,9 @@ h1 {
   background-color: #2c3e50;
   width: 100%;
   color: White;
-  background-image: url("https://www.transparenttextures.com/patterns/bright-squares.png");
+  background-color: #2c3e50;
+  background-image: url("https://www.transparenttextures.com/patterns/random-grey-variations.png");
+
 }
 
 h6 {
@@ -315,6 +313,7 @@ h6 {
   color: #d2b48c;
 
 }
+
 
 input[type=text], input[type=number], textarea {
   width: 100%;
@@ -340,4 +339,28 @@ input[type=submit] {
 
 input[type=submit]:hover {
   background-color: #bc9055;
+}
+
+/*Random Quote Generator*/
+#quote-container {
+  display: flex;
+  margin: 0px 0px;
+  width: 45%;
+  align-items: center;
+  justify-content: center;
+}
+
+#quoteDisplay {
+ font-size: 15px;
+ text-align: center;
+ margin: 0px 0px;
+ padding: 5px;
+ color: White;
+ font-family: Montserrat;
+ background: rgb(210,180,140, 0.5);
+}
+
+#form-and-quote {
+  display: flex;
+  justify-content: space-between;
 }
