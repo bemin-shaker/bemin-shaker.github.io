@@ -172,7 +172,7 @@ h1 {
 
 
 /* About Me Section */
-  #aboutme {
+#aboutme {
   padding: 65px 50px;
   background-color: #F8F8F8;
 }
@@ -200,6 +200,7 @@ h1 {
 
 }
 
+
 /* Add padding BETWEEN each column (if you want) */
 .row,
 .row, .column {
@@ -224,11 +225,14 @@ h1 {
 .content {
   background-color: ;
   padding: 10px;
+  font-family: "PT Serif";
+  font-size: 1.2em;
+
 }
 
 
 /*For Laptop and Tablet Devices > 601px */
-@media screen and (min-width: 671px) {
+@media screen and (min-width: 701px) {
 
   .footer {
     padding: 50px 50px 5px 50px;
@@ -245,7 +249,7 @@ h1 {
 }
 
 /*For Mobile Devices < 600px */
-@media screen and (max-width: 670px) {
+@media screen and (max-width: 700px) {
   .profile {
     height: 100px;
     width: 100px;
