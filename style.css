@@ -133,8 +133,7 @@ a:hover, #socialitem:hover {
   text-align: center;
   background-color: White;
   height: 600px;
-  padding-top: 120px;
-  padding-bottom:120px;
+
   margin-top: 60px;
 }
 
@@ -147,6 +146,7 @@ a:hover, #socialitem:hover {
   height: 150px;
   width: 150px;
   border-radius: 50%;
+
 
 }
 
@@ -168,9 +168,13 @@ h1 {
   font-size: 17px
   max-width: 400px;
   text-align: center;
+
 }
 
-
+#div-container {
+  margin-top: 240px;
+  margin-bottom: 180px;
+}
 /* About Me Section */
 #aboutme {
   padding: 65px 50px;
@@ -230,6 +234,14 @@ h1 {
 
 }
 
+#see_proj_button {
+  background-color: #2c3e50;
+  color: #d2b48c;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
 
 /*For Laptop and Tablet Devices > 601px */
 @media screen and (min-width: 701px) {
@@ -250,6 +262,13 @@ h1 {
 
 /*For Mobile Devices < 600px */
 @media screen and (max-width: 700px) {
+
+  #div-container {
+    margin-top: 200px;
+    margin-bottom: 140px;
+    padding: 0px 5px 0px 5px;
+  }
+
   .profile {
     height: 100px;
     width: 100px;
