@@ -1,389 +1,382 @@
-
 * {
   box-sizing: border-box;
 }
 
-
-/* Body */
 body {
-  font-family: Montserrat;
-  color: #2c3e50;
+  font-family: Montserrat, sans-serif;
+  width: 100%;
+  background-color: #0a192f;
 }
 
-html,body
-{
-    width: 100%;
-    margin: 0px;
-    padding: 0px;
-    overflow-x: hidden;
-
-}
-
-
-/* Navigation Bar */
+/*Navbar*/
 .navbar {
-  background-color: #2c3e50;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  font-size: 16px;
-  font-weight: bold;
-  font-family: Mukta, sans-serif;
+  padding-left: 60px;
+  padding-right: 60px;
+  background-color: #0a192f;
+}
+
+#nav-item {
+  color: white;
+  font-weight: 500;
+  margin-right: 10px;
+  color: rgb(136, 146, 176);
+
+}
+#nav-item:hover {
+  color: #c49c67;
+}
+
+.navbar-toggler {
+  border: 0;
+  color: rgb(136, 146, 176);
+  opacity: 80%;
+}
+
+
+span {
+  color: rgb(13, 34, 68);
+}
+/*Header*/
+.jumbotron {
+  height: 95vh;
+  color: white;
   display: flex;
-  justify-content: space-between;
-  overflow: hidden;
-  z-index: 1;
+
+  align-items: center;
+  text-align: left;
+  margin-bottom: 0;
+  background-color: #0a192f;
+
+  padding-left: 300px;
+  padding-right: 300px;
 }
 
-.navbar li {
-  display: inline-block;
-  padding: 0px 15px;
+h1 {
+  color: rgb(204, 214, 246);
+  font-weight: 700;
+
+  font-size: 70px;
 }
 
-.navbar a {
-  text-decoration: none;
-  color: #D2B48C;
-}
-
-a:hover, #socialitem:hover {
-  color: #F8F8F9;
-}
-
-#socialitem {
-  color:#D2B48C
-}
-
-#navigate {
-   padding: 0px;
-   padding-right: 5px;
-   padding-left: 35px;
+h5 {
+  color: #c49c67;
+  font-size: 18px;
 
 }
 
-#social-icons {
-   position: abosulute;
-   display: inline-block;
-   padding: 13px;
-   padding-left: 5px;
-   padding-right: 50px;
+h4 {
+  margin-bottom: 80px;
+  font-size: 60px;
+  color: rgb(136, 146, 176);
+  font-weight: 600;
 }
 
-#socialitem {
-   padding-left: 30px;
+ul {
+  margin-left: 15px;
 }
 
-#mobile-nav {
-  position: fixed;
-  width: 100%;
-  background-color: #2c3e50;
-  display: flex;
-  justify-content: space-between;
-}
-
-/* Dropdown Button */
-.dropbtn {
-  background-color: #2c3e50;
-  color: #D2B48C;
-  padding: 14px;
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
-}
-
-
-/* Dropdown button on hover & focus */
-.dropbtn:hover, .dropbtn:focus, {
-  background-color: #D2B48C;
-  color: #2c3e50;
-}
-
-/* The container <div> - needed to position the dropdown content */
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-/* Dropdown Content (Hidden by Default) */
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-/* Links inside the dropdown */
-.dropdown-content a {
-  color: #2c3e50;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #ddd}
-
-/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
-.show {display:block;}
-
-
-/* Header */
-.header {
+h2 {
   text-align: center;
-  background-color: White;
-  height: 600px;
-
-  margin-top: 60px;
 }
 
-.title {
-  font-weight: bold;
-  font-family: Montserrat;
+#view-resume-btn {
+  margin-bottom: 80px;
+  color: #c49c67;
+  border-color: #c49c67;
+}
+
+#view-resume-btn:hover {
+  background-color: rgb(23, 42, 69);
+}
+
+/*Padding for each Section (not including header)*/
+.about-me, #education-section, .projects_section, #footer {
+  padding-top: 140px;
+  padding-left: 300px;
+  padding-right: 300px;
+}
+
+/*About Me*/
+h2 {
+  margin-bottom: 60px;
+  font-weight: 600;
+  color: rgb(204, 214, 246);
+}
+
+.about-me {
+  text-align: center;
+}
+
+.about-par {
+  color: rgb(136, 146, 176);
+  text-align: left;
+  min-width: 45%;
+  padding: 0 40px 0 40px;
 }
 
 .profile {
   height: 150px;
-  width: 150px;
   border-radius: 50%;
-
-
+  margin-bottom: 60px;
+  box-shadow: 0px 2px 10px Black;
 }
 
-h1 {
-  color: #2c3e50;
-  font-size: 40px;
-  font-family: Mukta, sans-serif;
-  font-weight: 200;
-  line-height: 1.8;
-  padding-left: 7px;
-  padding-right: 7px;
+.par-and-img {
+  display: block;
 }
 
-.about-me, nav {
-  color: #2c3e50;
-  font-family: Montserrat;
-  line-height: 1.8;
-  font-weight: normal;
-  font-size: 17px
-  max-width: 400px;
+/*Education*/
+.container.shadow-sm {
+  padding: 10px 0 0 0;
   text-align: center;
+  background-color: rgb(23, 42, 69);
+  color: rgb(204, 214, 246);
+  max-width: 70%;
 
 }
 
-#div-container {
-  margin-top: 240px;
-  margin-bottom: 180px;
-}
-/* About Me Section */
-#aboutme {
-  padding: 65px 50px;
-  background-color: #F8F8F8;
+.container.shadow-sm h6 {
+  margin-top: 15px;
+
 }
 
-#aboutpar {
-  max-width: 960px;
-  font-size: 1.2em;
+#education-section {
+  text-align: center;
+}
+
+ul {
+  text-align: left;
+}
+
+.card-body {
+  background-color: rgb(23, 42, 69);
+  text-align: left;
+}
+
+#more-info-button {
+  padding: 0 0 0 0;
+  border-radius: 0;
+  background-color: #c49c67;
+  border: #c49c67;
+  color: #0a192f;
+  font-weight: 500;
+}
+
+/*Projects*/
+
+.card-title {
+  color: rgb(204, 214, 246);
+  font-weight: bold;
+}
+.card {
+  border: 0;
+  min-width: 250px;
+  background: transparent;
+}
+
+.card p {
+  color: rgb(168, 178, 209);
+  font-size: 14px;
+}
+.card-body, .card-footer, .text-muted {
+  background-color: #172a45;
+  color: rgb(204, 214, 246);
+}
+
+.fa-file-code-o {
+  color: #c49c67;
   margin-bottom: 20px;
-  font-family: "PT Serif";
+  opacity: 90%;
+}
 
+.card-footer {
+  margin-bottom: 30px;
+}
+
+/*Footer*/
+#footer {
+  color: rgb(136, 146, 176);
+  font-size: 12px;
+  text-align: center;
+}
+
+#socialitem {
+  color: rgb(136, 146, 176);
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+#socialitem:hover {
+  color: #c49c67;
+}
+
+#social-icons {
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+
+#footer p {
+  color: rgb(136, 146, 176);
+  font-size: 16px;
+  margin-bottom: 60px;
+}
+
+.footer-par {
+  max-width: 65%;
 }
 
 
-/* Project Section */
-.proj-section {
-  padding: 65px 50px;
-  /*background-color: #D2B48C;*/
-  background-color: #d2b48c;
-  background-image: url("https://www.transparenttextures.com/patterns/60-lines.png");
 
-}
+/* small devices (portrait phones, less than 760px) */
 
-.row {
-  margin: 8px -16px;
-
-}
-
-
-/* Add padding BETWEEN each column (if you want) */
-.row,
-.row, .column {
-  padding: 4px;
-}
-
-/* Create four equal columns that floats next to each other */
-.column {
-  float: left;
-  width: 25%;
-
-}
-
-/* Clear floats after rows */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Content */
-.content {
-  background-color: ;
-  padding: 10px;
-  font-family: "PT Serif";
-  font-size: 1.2em;
-
-}
-
-#see_proj_button {
-  background-color: #2c3e50;
-  color: #d2b48c;
-  padding: 8px 16px;
-  border: none;
-  border-radius: 3px;
-  cursor: pointer;
-}
-
-/*For Laptop and Tablet Devices > 601px */
-@media screen and (min-width: 701px) {
-
-  .footer {
-    padding: 50px 50px 5px 50px;
+@media (max-width: 760.00px) {
+  .about-me, #education-section, .projects_section, #footer {
+    padding-top: 140px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
-  .column {
-    width: 50%;
+  .jumbotron{
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
-  .form-container {
-    width: 50%;
+  .navbar {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  #bemin-title, #aspiring-title {
+    font-size: 40px;
   }
 
-}
+  #hi-title {
+    font-size: 13px;
+  }
 
-/*For Mobile Devices < 600px */
-@media screen and (max-width: 700px) {
-
-  #div-container {
-    margin-top: 200px;
-    margin-bottom: 140px;
-    padding: 0px 5px 0px 5px;
+  .par-and-img {
+    display: block;
   }
 
   .profile {
     height: 100px;
-    width: 100px;
-  }
-  .proj-section, #aboutme {
-    padding: 40px 5px 50px 5px;
+    margin-bottom: 60px;
   }
 
-
-  .footer {
-      padding: 40px 5px 1px 5px;
+  .about-par {
+    max-width: 100%;
+    padding-left: 0px;
+    padding-right: 0px;
   }
 
-  #social-icons {
-    padding: 13px 10px 13px 5px;
+  .footer-par {
+    max-width: 80%;
+
   }
 
-  #aboutpar {
-    font-size: 1.1em;
+  #footer p {
+    font-size: 14px;
   }
 
-  .about-me {
+  #copyright-info {
     font-size: 12px;
   }
 
-  h1 {
-    font-size: 35px;
+  .container.shadow-sm {
+    max-width: 100%;
+  }
+  #nav-item {
+    padding-left: 10px;
+  }
+}
+
+
+/* Medium devices (tablets, less than 992px) */
+@media (min-width: 761px) and (max-width: 991.98px) {
+    .about-me, #education-section, .projects_section, #footer {
+      padding-top: 140px;
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+
+    .jumbotron{
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+
+    .navbar {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+
+    #bemin-title, #aspiring-title {
+      font-size: 45px;
+    }
+
+    #hi-title {
+      font-size: 13px;
+    }
+
+    .par-and-img {
+      display: block;
+
+    }
+
+    .profile {
+      height: 140px;
+      margin-bottom: 60px;
+    }
+
+    .about-par {
+      max-width: 90%;
+    }
+
+    .footer-par {
+      max-width: 85%;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .about-me, #education-section, .projects_section, #footer {
+    padding-top: 140px;
+    padding-left: 150px;
+    padding-right: 150px;
   }
 
-  .section-title {
-    text-align: center;
-    font-size: 22px;
+  .jumbotron{
+    padding-left: 150px;
+    padding-right: 150px;
   }
 
   .navbar {
-    display: none;
+    padding-left: 60px;
+    padding-right: 60px;
   }
 
-  .column {
-    width: 100%;
+  #bemin-title, #aspiring-title {
+    font-size: 50px;
   }
 
+  #hi-title {
+    font-size: 16px;
+  }
 
-}
+  .par-and-img {
+      display: block;
 
+    }
 
-/* Footer */
-.footer {
-  background-color: #2c3e50;
-  width: 100%;
-  color: White;
-  background-color: #2c3e50;
-  background-image: url("https://www.transparenttextures.com/patterns/random-grey-variations.png");
+  .profile {
+      height: 140px;
+      margin-bottom: 60px;
+    }
 
-}
-
-h6 {
-  font-weight: lighter;
-  text-align: center;
-}
-
-/*Form Section*/
-.form-container {
-  border-radius: 5px;
-  color: #d2b48c;
-
-}
+  .about-par {
+      max-width: 100%;
+    }
 
 
-input[type=text], input[type=number], textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc; /
-  border-radius: 4px;
-  box-sizing: border-box;
-  margin-top: 6px;
-  margin-bottom: 16px;
-  resize: vertical;
-  background-color: #F8F8F8;
-}
-
-/* Submit Button for Form */
-input[type=submit] {
-  background-color: #d2b48c;
-  color: #2c3e50;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-input[type=submit]:hover {
-  background-color: #bc9055;
-}
-
-/*Random Quote Generator*/
-#quote-container {
-  display: flex;
-  margin: 0px 0px;
-  width: 45%;
-  align-items: center;
-  justify-content: center;
-}
-
-#quoteDisplay {
- font-size: 15px;
- text-align: center;
- margin: 0px 0px;
- padding: 5px;
- color: White;
- font-family: Montserrat;
- background: rgb(210,180,140, 0.5);
-}
-
-#form-and-quote {
-  display: flex;
-  justify-content: space-between;
+  .footer-par {
+      max-width: 85%;
+    }
 }
