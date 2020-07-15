@@ -18,12 +18,16 @@ body {
 #nav-item {
   color: white;
   font-weight: 500;
-  margin-right: 10px;
+  margin-right: 0px;
   color: rgb(136, 146, 176);
-
 }
 #nav-item:hover {
   color: #c49c67;
+  background-color: rgb(13, 34, 68);
+}
+
+.navbar-brand:hover {
+  background-color: rgb(13, 34, 68);
 }
 
 .navbar-toggler {
@@ -80,9 +84,10 @@ h2 {
 }
 
 #view-resume-btn {
-  margin-bottom: 80px;
+  margin-bottom: 60px;
   color: #c49c67;
   border-color: #c49c67;
+  padding: 10px 12px 10px 12px;
 }
 
 #view-resume-btn:hover {
@@ -90,15 +95,16 @@ h2 {
 }
 
 /*Padding for each Section (not including header)*/
-.about-me, #education-section, .projects_section, #footer {
-  padding-top: 140px;
+.about-me, #education-section, .projects_section {
+  padding-top: 30px;
   padding-left: 220px;
   padding-right: 220px;
+  padding-bottom: 180px;
 }
 
 /*About Me*/
 h2 {
-  margin-bottom: 60px;
+  margin-bottom: 40px;
   font-weight: 600;
   color: rgb(204, 214, 246);
 }
@@ -117,7 +123,7 @@ h2 {
 .profile {
   height: 150px;
   border-radius: 50%;
-  margin-bottom: 60px;
+  margin-bottom: 40px;
   box-shadow: 0px 2px 10px Black;
 }
 
@@ -198,6 +204,10 @@ ul {
   color: rgb(136, 146, 176);
   font-size: 12px;
   text-align: center;
+  padding-top: 90px;
+  padding-left: 220px;
+  padding-right: 220px;
+  padding-bottom: 60px;
 }
 
 #socialitem {
@@ -211,29 +221,46 @@ ul {
 }
 
 #social-icons {
-  padding-bottom: 30px;
-  padding-top: 30px;
+  padding-bottom: 60px;
+  padding-top: 60px;
+}
+
+#quoteDisplay {
+  color: #c49c67;
+  font-size: 16px;
+  font-weight: 200;
+  margin: 0 140px 30px 140px;
+  padding: 10px 10px 10px 10px;
+  background-color: #172a45;
 }
 
 #footer p {
   color: rgb(136, 146, 176);
   font-size: 16px;
   margin-bottom: 60px;
-}
-
-.footer-par {
-  max-width: 65%;
+  padding: 0 140px 0 140px;
 }
 
 
+#copyrightinfo {
+  font-size: 12px;
+}
 
 /* small devices (portrait phones, less than 760px) */
 
 @media (max-width: 760.00px) {
-  .about-me, #education-section, .projects_section, #footer {
-    padding-top: 140px;
+  .about-me, #education-section, .projects_section {
+    padding-top: 90px;
     padding-left: 10px;
     padding-right: 10px;
+    padding-bottom: 140px;
+  }
+
+  #footer {
+    padding-top: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 60px;
   }
 
   .jumbotron{
@@ -259,43 +286,70 @@ ul {
 
   .profile {
     height: 100px;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
   }
 
   .about-par {
     max-width: 100%;
     padding-left: 0px;
     padding-right: 0px;
-  }
-
-  .footer-par {
-    max-width: 80%;
-
-  }
-
-  #footer p {
     font-size: 14px;
   }
 
-  #copyright-info {
-    font-size: 12px;
+  .footer-par {
+    max-width: 100%;
+
+  }
+
+  #footer-par {
+    font-size: 14px;
+  }
+
+  #footer p {
+    padding: 0 0 0 0;
+    font-size: 14px;
+  }
+
+  #quoteDisplay {
+    margin: 0 0 0 0;
+    font-size: 14px;
+  }
+
+  h6 {
+    font-size: 16px;
+
   }
 
   .container.shadow-sm {
     max-width: 100%;
   }
+
   #nav-item {
     padding-left: 10px;
+  }
+
+  #view-resume-btn {
+    font-size: 14px;
   }
 }
 
 
+
 /* Medium devices (tablets, less than 992px) */
 @media (min-width: 761px) and (max-width: 998.99px) {
-    .about-me, #education-section, .projects_section, #footer {
-      padding-top: 140px;
+    .about-me, #education-section, .projects_section {
+      padding-top: 90px;
       padding-left: 40px;
       padding-right: 40px;
+      padding-bottom: 140px;
+    }
+
+
+    #footer {
+      padding-top: 30px;
+      padding-left: 40px;
+      padding-right: 40px;
+      padding-bottom: 60px;
     }
 
     .jumbotron{
@@ -323,7 +377,7 @@ ul {
 
     .profile {
       height: 140px;
-      margin-bottom: 60px;
+      margin-bottom: 40px;
     }
 
     .about-par {
@@ -333,18 +387,34 @@ ul {
     }
 
     .footer-par {
-      max-width: 85%;
+      max-width: 70%;
+    }
+
+    #footer p {
+      padding: 0 0 0 0;
+    }
+
+    #quoteDisplay {
+      margin: 0 0 0 0;
     }
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 999px) and (max-width: 1280.00px) {
-  .about-me, #education-section, .projects_section, #footer {
-    padding-top: 140px;
+  .about-me, #education-section, .projects_section {
+    padding-top: 90px;
     padding-left: 150px;
     padding-right: 150px;
+    padding-bottom: 140px;
   }
 
+
+  #footer {
+    padding-top: 30px;
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-bottom: 60px;
+  }
   .jumbotron{
     padding-left: 150px;
     padding-right: 150px;
@@ -370,13 +440,20 @@ ul {
 
   .profile {
       height: 140px;
-      margin-bottom: 60px;
+      margin-bottom: 40px;
     }
 
   .about-par {
       max-width: 100%;
     }
 
+    #footer p {
+      padding: 0 0 0 0;
+    }
+
+    #quoteDisplay {
+      margin: 0 0 0 0;
+    }
 
   .footer-par {
       max-width: 85%;

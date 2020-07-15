@@ -3,17 +3,19 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css">
     <link rel="stylesheet"
     href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
     integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
     crossorigin="anonymous">
+
     <link href="style.css" type="text/css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
     <title>Bemin Shaker</title>
   </head>
-  <body>
 
+  <body>
     <!--Navbar-->
     <nav class="navbar navbar-expand-lg navbar-dark sticky-top" >
       <a class="navbar-brand" href="#"><img src='./assets/logo10.png' height=55></a>
@@ -155,16 +157,22 @@
     <!--footer-->
     <div id="footer" class="footer container-fluid">
       <h2>Let's Talk</h2>
-      <div class="container footer-par">
-        <p>I'm always open to having a thoughtful conversation. Reach out to any of my social media platforms or send me an email. I'll try my best to get back to you!</p>
+      <div class="container footer-par-cont">
+        <p> I'm always open to having a thoughtful conversation. Reach out to any of my social media platforms or send me an email. I'll try my best to get back to you!</p>
       </div>
       <a target='_blank' href='mailto:beminshaker@gmail.com'><button id='view-resume-btn' type="button" class="btn btn-outline-dark">Message Me</button></a>
+
+          <!--Random Quote Generator-->
+          <div id="quote-container">
+            <h6 onclick="newQuote()" id="quoteDisplay">Hey, there. Click Me!</h6>
+          </div>
+
       <div id="social-icons">
           <a target='_blank' href='https://www.linkedin.com/in/beminshaker/'><i id='socialitem' class="fa fa-linkedin fa-2x"></i></a>
           <a target='_blank' href='https://github.com/bemin-shaker'><i id='socialitem' class="fa fa-github fa-2x"></i></a>
           <a target='_blank' href='https://twitter.com/bemin_shaker'><i id='socialitem' class="fa fa-twitter fa-2x"></i></a>
       </div>
-      <p id="copyright-info">Designed & Built by Bemin Shaker</p>
+      <h6 id="copyrightinfo">Designed & Built by Bemin Shaker</h6>
     </div>
 
 
@@ -175,6 +183,7 @@
       crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
       crossorigin="anonymous"></script>
+    <script src="./random-quote.js"></script>
 
   </body>
 </html>
