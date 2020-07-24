@@ -93,12 +93,6 @@
         <button id="more-info-button" class="btn btn-dark btn-block" aria-expanded="false" aria-controls="seedSpecial" data-target="#moreInfo" data-toggle="collapse" name="button">Details</button>
         <div class="collapse" id="moreInfo">
           <div class="card card-body" style="text-align: left">
-            <h6>Extracurricular Activity:</h6>
-            <ul>
-              <li>Software Engineering Club</li>
-              <li>Launchpad</li>
-              <li>Johnson & Johnson Externship</li>
-            </ul>
             <h6>Relavent Coursework:</h6>
             <ul>
               <li>Engineering Design I-II</li>
@@ -117,7 +111,10 @@
         <div class="card-deck">
           <div class="card">
             <div class="card-body">
-              <i class="fa fa-file-code-o fa-2x"></i>
+              <div id="card-icons">
+                <i class="fa fa-file-code-o fa-2x"></i>
+                <a href="https://github.com/bemin-shaker/Musicly" target="_blank"><i class="fa fa-link fa-2x"></i></a>
+              </div>
               <h5 class="card-title">Musicly</h5>
               <p class="card-text">An interactive web application that enables users to search the Spotify library and create a custom playlist.
                 I integrated the Spotify API to allow users to save their playlist to a personal account. </p>
@@ -128,7 +125,10 @@
           </div>
           <div class="card">
             <div class="card-body">
-              <i class="fa fa-file-code-o fa-2x"></i>
+              <div id="card-icons">
+                <i class="fa fa-file-code-o fa-2x"></i>
+                <a href="https://github.com/bemin-shaker/Eatable" target="_blank"><i class="fa fa-link fa-2x"></i></a>
+              </div>
               <h5 class="card-title">Eatable</h5>
               <p class="card-text">I developed a web app using JavaScript and React that allows users to search for restaurants by keyword and location.
                 Search results can be sorted by preference based on three distinct categories.
@@ -140,7 +140,10 @@
           </div>
           <div class="card">
             <div class="card-body">
-              <i class="fa fa-file-code-o fa-2x"></i>
+              <div id="card-icons">
+                <i class="fa fa-file-code-o fa-2x"></i>
+                <a href="https://github.com/bemin-shaker/COVID-19-Voice-Assistant" target="_blank"><i class="fa fa-link fa-2x"></i></a>
+              </div>
               <h5 class="card-title">COVID-19 Voice Assistant</h5>
               <p class="card-text">Voice assistant software that answers coronavirus-related questions based on the latest data.
                 It was Implemented by using speech recognition technology and web scraping tools to optimize interactivity and functionality.
@@ -164,7 +167,7 @@
 
           <!--Random Quote Generator-->
           <div id="quote-container">
-            <h6 onclick="newQuote()" id="quoteDisplay">Hey, there. Click Me!</h6>
+            <h6 onclick="newQuote()" id="quoteDisplay">Hey, there. Click me for some inspiration! </h6>
           </div>
 
       <div id="social-icons">

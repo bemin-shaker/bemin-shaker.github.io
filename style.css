@@ -13,6 +13,7 @@ body {
   padding-left: 60px;
   padding-right: 60px;
   background-color: #0a192f;
+  padding-top: 0;
 }
 
 #nav-item {
@@ -21,13 +22,18 @@ body {
   margin-right: 0px;
   color: rgb(136, 146, 176);
 }
+
 #nav-item:hover {
   color: #c49c67;
-  background-color: rgb(13, 34, 68);
+  background-color: #172a45;
+}
+
+.navbar-brand {
+  padding-top: 10px;
 }
 
 .navbar-brand:hover {
-  background-color: rgb(13, 34, 68);
+  background-color: #172a45;
 }
 
 .navbar-toggler {
@@ -96,7 +102,7 @@ h2 {
 
 /*Padding for each Section (not including header)*/
 .about-me, #education-section, .projects_section {
-  padding-top: 30px;
+  padding-top: 70px;
   padding-left: 220px;
   padding-right: 220px;
   padding-bottom: 180px;
@@ -195,6 +201,17 @@ ul {
   opacity: 90%;
 }
 
+#card-icons {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.fa-link {
+  color: rgb(168, 178, 209);
+  opacity: 70%;
+}
+
 .card-footer {
   margin-bottom: 30px;
 }
@@ -229,9 +246,10 @@ ul {
   color: #c49c67;
   font-size: 16px;
   font-weight: 200;
-  margin: 0 140px 30px 140px;
+  margin: 0 300px 30px 300px;
   padding: 10px 10px 10px 10px;
   background-color: #172a45;
+  border-radius: 3px;
 }
 
 #footer p {
@@ -352,6 +370,10 @@ ul {
       padding-bottom: 60px;
     }
 
+    #nav-item {
+      padding-left: 10px;
+    }
+
     .jumbotron{
       padding-left: 40px;
       padding-right: 40px;
@@ -395,7 +417,7 @@ ul {
     }
 
     #quoteDisplay {
-      margin: 0 0 0 0;
+        margin: 0 120px 30px 120px;
     }
 }
 
@@ -406,6 +428,10 @@ ul {
     padding-left: 150px;
     padding-right: 150px;
     padding-bottom: 140px;
+  }
+
+  #nav-item {
+    padding-left: 10px;
   }
 
 
@@ -452,7 +478,7 @@ ul {
     }
 
     #quoteDisplay {
-      margin: 0 0 0 0;
+        margin: 0 180px 30px 180px;
     }
 
   .footer-par {
