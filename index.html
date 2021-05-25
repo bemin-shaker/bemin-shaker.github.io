@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css">
     <link rel="stylesheet"
@@ -24,7 +26,7 @@
   <body>
 
     <!--Navbar-->
-    <nav class="navbar navbar-expand-lg navbar-dark sticky-top" >
+    <nav data-aos="fade-in" data-aos-duration="1600" class="navbar navbar-expand-lg navbar-dark sticky-top" >
       <a class="navbar-brand" href="#"><img src='./assets/logo10.png' height=55></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse"
       data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -51,24 +53,23 @@
 
     <!--Header-->
     <div class="jumbotron jumbotron-fluid">
-        <div class="heading">
+        <div data-aos="fade-right" data-aos-duration="2000" class="heading">
           <h5 id="hi-title">Hi, my name is</h5>
           <h1 id="bemin-title">Bemin Shaker.</h1>
           <h4 id="aspiring-title">I am an aspiring developer.</h4>
           <a href="./assets/resume.pdf" target="_blank"><button id='view-resume-btn' type="button" class="btn btn-outline-dark">View Resume</button></a>
-
         </div>
 
     </div>
 
     <!--About Me-->
     <div id="about-me" class="about-me">
-      <h2>About Me</h2>
+      <h2 data-aos="fade-up" data-aos-duration="1600" >About Me</h2>
       <div class="par-and-img">
-        <div class="container">
+        <div data-aos="fade-up" data-aos-duration="1600"  class="container">
           <img class="profile" src="./assets/profile1.jpg" />
         </div>
-        <div class="about-par">
+        <div data-aos="fade-up" data-aos-duration="1600"  class="about-par">
           <p>Hello, I'm glad you found my page! </p>
           <p>I am a software engineering student located in the New York City metropolitan area.</p>
           <p>I love to code! During my free time, I am either learning a new programming language or working on a fun project.
@@ -82,9 +83,9 @@
 
     <!--Education-->
     <div id="education-section"class="container-fluid">
-      <h2>Education</h2>
+      <h2 data-aos="fade-up" data-aos-duration="1600" >Education</h2>
 
-      <div class="cont-ed container shadow-sm">
+      <div data-aos="flip-up" data-aos-duration="1600"  class="cont-ed container shadow-sm">
         <img src='./assets/Stevens-Logo.png' height=90>
         <h6>B.E. Software Engineering</h6>
         <p>August 2019 - May 2023</p>
@@ -107,9 +108,9 @@
   </div>
   <!--Projects-->
     <div id="projects_section" class="container-fluid projects_section">
-      <h2>Projects</h2>
+      <h2 data-aos="fade-up" data-aos-duration="1200">Projects</h2>
         <div class="card-deck">
-          <div class="card">
+          <div data-aos="fade-up" data-aos-duration="1000" class="card">
             <div class="card-body">
               <div id="card-icons">
                 <i class="fa fa-file-code-o fa-2x"></i>
@@ -123,7 +124,7 @@
               <small class="text-muted">JavaScript, React & Spotify API</small>
             </div>
           </div>
-          <div class="card">
+          <div data-aos="fade-up" data-aos-duration="1800" class="card">
             <div class="card-body">
               <div id="card-icons">
                 <i class="fa fa-file-code-o fa-2x"></i>
@@ -138,7 +139,7 @@
               <small class="text-muted">JavaScript, React & Yelp API</small>
             </div>
           </div>
-          <div class="card">
+          <div data-aos="fade-up" data-aos-duration="2400" class="card">
             <div class="card-body">
               <div id="card-icons">
                 <i class="fa fa-file-code-o fa-2x"></i>
@@ -158,7 +159,7 @@
 
 </div>
     <!--footer-->
-    <div id="footer" class="footer container-fluid">
+    <div data-aos="fade-in" data-aos-duration="1200" id="footer" class="footer container-fluid">
       <h2>Let's Talk</h2>
       <div class="container footer-par-cont">
         <p> I'm always open to having a thoughtful conversation. Reach out to any of my social media platforms or send me an email. I'll try my best to get back to you!</p>
@@ -187,6 +188,9 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
       crossorigin="anonymous"></script>
     <script src="./random-quote.js"></script>
+    <script>
+      AOS.init();
+    </script>
 
   </body>
 </html>
