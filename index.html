@@ -24,10 +24,10 @@
   </head>
 
   <body>
-
+    
     <!--Navbar-->
-    <nav data-aos="fade-in" data-aos-duration="1600" class="navbar navbar-expand-lg navbar-dark sticky-top" >
-      <a class="navbar-brand" href="#"><img src='./assets/logo10.png' height=55></a>
+    <nav id="navBar" class="navbar navbar-expand-lg navbar-dark sticky-top" >
+      <a class="navbar-brand" href="#"><img src='./assets/logo10.png' height=50 data-aos="fade-down" data-aos-duration="300" data-aos-once="true" ></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse"
       data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
       aria-expanded="false" aria-label="Toggle navigation">
@@ -35,82 +35,139 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
+          <li class="nav-item" data-aos="fade-down" data-aos-duration="450" data-aos-once="true" >
             <a id="nav-item" class="nav-link" href="#about-me">About</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item" data-aos="fade-down" data-aos-duration="600" data-aos-once="true" >
             <a id="nav-item" class="nav-link" href="#education-section">Education</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item" data-aos="fade-down" data-aos-duration="750" data-aos-once="true" >
             <a id="nav-item" class="nav-link" href="#projects_section">Projects</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item" data-aos="fade-down" data-aos-duration="900" data-aos-once="true" >
             <a id="nav-item" class="nav-link" href="#footer">Contact</a>
           </li>
         </ul>
       </div>
     </nav>
 
+    
+
     <!--Header-->
     <div class="jumbotron jumbotron-fluid">
-        <div data-aos="fade-right" data-aos-duration="2000" class="heading">
-          <h5 id="hi-title">Hi, my name is</h5>
-          <h1 id="bemin-title">Bemin Shaker.</h1>
-          <h4 id="aspiring-title">I am an aspiring developer.</h4>
-          <a href="./assets/resume.pdf" target="_blank"><button id='view-resume-btn' type="button" class="btn btn-outline-dark">View Resume</button></a>
+        <div  class="heading">
+          <h5 id="hi-title" data-aos="fade" data-aos-duration="300" data-aos-once="true"  data-aos-delay="400">Hi, my name is</h5>
+          <h1 id="bemin-title" data-aos="fade" data-aos-duration="500" data-aos-once="true" data-aos-delay="500">Bemin Shaker.</h1>
+          <h1 class="aspire" data-aos="fade-up" data-aos-duration="550" data-aos-once="true"  data-aos-delay="600" >
+            <a data-aos-delay="600" href="" class="typewrite" data-period="2000" data-type='[ "I am an aspiring developer.", "I love to code.", "I like to design things.", "I build things for the web." ]'>
+              <span class="wrap"  ></span>
+            </a>
+          </h1>
+          <a href="./assets/resume.pdf" target="_blank" data-aos="fade-up" data-aos-duration="700" data-aos-once="true"  data-aos-delay="600"><button id='view-resume-btn' type="button" class="btn btn-outline-dark">View Resume</button></a>
         </div>
 
     </div>
 
     <!--About Me-->
     <div id="about-me" class="about-me">
-      <h2 data-aos="fade-up" data-aos-duration="1600" >About Me</h2>
+      <h2 data-aos="fade-up" data-aos-duration="1600" data-aos-once="true" >About Me</h2>
       <div class="par-and-img">
-        <div data-aos="fade-up" data-aos-duration="1600"  class="container">
+        <div data-aos="fade-up" data-aos-duration="1600" data-aos-once="true" class="container">
           <img class="profile" src="./assets/profile1.jpg" />
         </div>
-        <div data-aos="fade-up" data-aos-duration="1600"  class="about-par">
-          <p>Hello, I'm glad you found my page! </p>
-          <p>I am a software engineering student located in the New York City metropolitan area.</p>
+        <div data-aos="fade-up" data-aos-duration="1600" data-aos-once="true" class="about-par">
+          <p>Hello! I am a software engineering student located in the New York City metropolitan area.</p>
           <p>I love to code! During my free time, I am either learning a new programming language or working on a fun project.
             I'm particulary interested in web development.</p>
           <p>You are invited to check out my resume for a closer look at my skills and experience.
             I'm always open to having a thoughtful conversation.
             Reach out to any of my social media platforms or fill out the form below!</p>
+          <p>Here are a few technologies I've been working with recently:</p>
+          <div class="listColumns">
+            <ul>
+              <li>JavaScript</li>
+              <li>React</li>
+              <li>HTML/CSS</li>
+            </ul>
+
+            <ul>
+              <li>Java</li>
+              <li>Python</li>
+              <li>Node.js</li>
+            </ul>
+
+            <ul>
+              <li>Git/GitHub</li>
+              <li>WordPress</li>
+              <li>UIPath (RPA)</li>
+            </ul>
+
+          </div>
+          
         </div>
       </div>
     </div>
 
     <!--Education-->
     <div id="education-section"class="container-fluid">
-      <h2 data-aos="fade-up" data-aos-duration="1600" >Education</h2>
+      <h2 data-aos="fade-up" data-aos-duration="1100" data-aos-once="true" >Education</h2>
 
-      <div data-aos="flip-up" data-aos-duration="1600"  class="cont-ed container shadow-sm">
+      <div data-aos="fade-up" data-aos-duration="1600"  data-aos-once="true" class="cont-ed container shadow-sm">
         <img src='./assets/Stevens-Logo.png' height=90>
         <h6>B.E. Software Engineering</h6>
         <p>August 2019 - May 2023</p>
-        <button id="more-info-button" class="btn btn-dark btn-block" aria-expanded="false" aria-controls="seedSpecial" data-target="#moreInfo" data-toggle="collapse" name="button">Details</button>
+        <button id="more-info-button" class="btn btn-dark btn-block" aria-expanded="false" aria-controls="seedSpecial" data-target="#moreInfo" data-toggle="collapse" name="button">Relevant Coursework</button>
         <div class="collapse" id="moreInfo">
           <div class="card card-body" style="text-align: left">
-            <h6>Relavent Coursework:</h6>
+      
             <ul>
-              <li>Engineering Design</li>
-              <li>Circuits & Systems</li>
+              <li>Software Requirements Analysis Engineering</li>
+              <li>Modeling & Simulation Software Programming</li>
+              <li>Web Programming</li>
+              <li>Computational Data Structures and Algorithms</li>
+              <li>Object-Oriented Programming</li>
               <li>Individual Software Engineering</li>
+              <li>Logistics & Supply Chain Management</li>
               <li>Introduction to Programming</li>
               <li>Engineering Graphics</li>
-              <li>Introduction to Entrepreneurial Thinking</li>
+              <li>Entrepreneurial Thinking</li>
               <li>Discrete Mathematics</li>
             </ul>
         </div>
-      </div>
-    </div>
+        </div>
+        </div>
   </div>
   <!--Projects-->
+
+  <div id="projects_section" class="container-fluid projects_section">
+    <h2 data-aos="fade-up" data-aos-duration="600" data-aos-once="true" data-aos-delay="400">Things I've Built</h2>
+    <div class="card mb-3 projectCard" >
+      <div class="row g-0 projectCard">
+        <div class="col-md-6" data-aos="fade-up" data-aos-duration="800" data-aos-once="true" data-aos-delay="700">
+          <img src="./assets/CapellaWebApp.png" class="img-fluid rounded-start" alt="...">
+        </div>
+        <div class="col-md-6" data-aos="fade-up" data-aos-duration="1200" data-aos-once="true" data-aos-delay="800">
+          <h6 class="card-label overlappingTitle">Featured Project</h6>
+          <h5 class="card-title overlappingTitle">Capella Web Application</h5>
+          <div class="card-body overlappingCard" >
+          
+            <p class="card-text">An interactive web application for a startup project that connects users to nearby community solar projects
+              and enables continues tracking of energy savings and billing. 
+            </p>
+            <p class="card-text"><small class="text-muted techno">React<span style="opacity: 0;">......</span>JavaScript<span style="opacity: 0;">......</span>Firebase<span style="opacity: 0;">......</span>CSS</small></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  
     <div id="projects_section" class="container-fluid projects_section">
-      <h2 data-aos="fade-up" data-aos-duration="1200">Projects</h2>
+
+
+      <h2 data-aos="fade-up" data-aos-duration="1200" data-aos-once="true">Other Noteworthy Projects</h2>
         <div class="card-deck">
-          <div data-aos="fade-up" data-aos-duration="1000" class="card">
+          <div data-aos="fade-up" data-aos-duration="1000" data-aos-once="true" class="card">
             <div class="card-body">
               <div id="card-icons">
                 <i class="fa fa-file-code-o fa-2x"></i>
@@ -124,7 +181,7 @@
               <small class="text-muted">JavaScript, React & Spotify API</small>
             </div>
           </div>
-          <div data-aos="fade-up" data-aos-duration="1800" class="card">
+          <div data-aos="fade-up" data-aos-duration="1800" data-aos-once="true" class="card">
             <div class="card-body">
               <div id="card-icons">
                 <i class="fa fa-file-code-o fa-2x"></i>
@@ -139,7 +196,7 @@
               <small class="text-muted">JavaScript, React & Yelp API</small>
             </div>
           </div>
-          <div data-aos="fade-up" data-aos-duration="2400" class="card">
+          <div data-aos="fade-up" data-aos-duration="2400" data-aos-once="true"class="card">
             <div class="card-body">
               <div id="card-icons">
                 <i class="fa fa-file-code-o fa-2x"></i>
@@ -154,6 +211,8 @@
               <small class="text-muted">Python, Regex, Text to Speech</small>
             </div>
           </div>
+
+          
 
       </div>
 
@@ -191,6 +250,74 @@
     <script>
       AOS.init();
     </script>
+    <script>
+      $(window).scroll(function() {
+    if ($(window).scrollTop() > 400) {
+        $('#navBar').addClass('floatingNav');
+    } else {
+        $('#navBar').removeClass('floatingNav');
+    }
+});
+    </script>
+    <script>
+    
+    
+    var TxtType = function(el, toRotate, period) {
+      this.toRotate = toRotate;
+      this.el = el;
+      this.loopNum = 0;
+      this.period = parseInt(period, 10) || 2000;
+      this.txt = '';
+      this.tick();
+      this.isDeleting = false;
+  };
+
+  TxtType.prototype.tick = function() {
+      var i = this.loopNum % this.toRotate.length;
+      var fullTxt = this.toRotate[i];
+
+      if (this.isDeleting) {
+      this.txt = fullTxt.substring(0, this.txt.length - 1);
+      } else {
+      this.txt = fullTxt.substring(0, this.txt.length + 1);
+      }
+
+      this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+
+      var that = this;
+      var delta = 200 - Math.random() * 100;
+
+      if (this.isDeleting) { delta /= 2; }
+
+      if (!this.isDeleting && this.txt === fullTxt) {
+      delta = this.period;
+      this.isDeleting = true;
+      } else if (this.isDeleting && this.txt === '') {
+      this.isDeleting = false;
+      this.loopNum++;
+      delta = 500;
+      }
+
+      setTimeout(function() {
+      that.tick();
+      }, delta);
+  };
+
+  window.onload = function() {
+      var elements = document.getElementsByClassName('typewrite');
+      for (var i=0; i<elements.length; i++) {
+          var toRotate = elements[i].getAttribute('data-type');
+          var period = elements[i].getAttribute('data-period');
+          if (toRotate) {
+            new TxtType(elements[i], JSON.parse(toRotate), period);
+          }
+      }
+      // INJECT CSS
+      var css = document.createElement("style");
+      css.type = "text/css";
+      css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
+      document.body.appendChild(css);
+  };</script>
 
   </body>
 </html>
