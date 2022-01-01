@@ -11,7 +11,7 @@ body {
 /*Navbar*/
 .navbar {
   padding: 10px 60px;
-  backdrop-filter: blur(50px);
+  background-color: #0a192f;
 }
 
 .floatingNav {
@@ -23,7 +23,7 @@ body {
 #nav-item {
   color: white;
   font-weight: 400;
-  margin-right: 0px;
+  margin-right: 1px;
   color: rgb(136, 146, 176);
 }
 
@@ -70,6 +70,7 @@ h5 {
   color: #c49c67;
   font-size: 18px;
   font-weight: 100;
+  margin-bottom: 0;
 }
 
 #hi-title {
@@ -81,6 +82,7 @@ h1 span {
   text-decoration: none;
   font-weight: 600;
   font-size: 60px;
+  line-height: 0 !important;
 }
 .aspire a {
   margin-bottom: 80px;
@@ -89,9 +91,8 @@ h1 span {
 
 .aspire {
   margin-bottom: 80px;
-}
-
-.typewrite {
+  line-height: 0.9;
+  min-height: 135px;
 }
 
 h4 {
