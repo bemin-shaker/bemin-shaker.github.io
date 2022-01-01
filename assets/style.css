@@ -420,6 +420,10 @@ ul {
   #view-resume-btn {
     font-size: 14px;
   }
+
+  h1 {
+    transform: translateY(15px) !important;
+  }
 }
 
 /* Medium devices (tablets, less than 992px) */
