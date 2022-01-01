@@ -422,7 +422,17 @@ ul {
   }
 
   h1 {
-    transform: translateY(15px) !important;
+    transform: translateY(20px) !important;
+  }
+
+  .overlappingCard,
+  .overlappingTitle {
+    transform: translateX(0);
+    text-align: left;
+  }
+
+  .card-label {
+    margin-top: 30px;
   }
 }
 
