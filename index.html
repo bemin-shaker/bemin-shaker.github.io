@@ -27,26 +27,41 @@
     
     <!--Navbar-->
     <nav id="navBar" class="navbar navbar-expand-lg navbar-dark sticky-top" >
-      <a class="navbar-brand" href="#"><img src='./assets/logo10.png' height=50 data-aos="fade-down" data-aos-duration="300" data-aos-once="true" ></a>
+      <div data-aos="zoom-in" data-aos-duration="400" >
+        <a class="navbar-brand" href="#"><img src='./assets/logo10.png' height=50  ></a>
+      </div>
+  
       <button class="navbar-toggler" type="button" data-toggle="collapse"
       data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
       aria-expanded="false" aria-label="Toggle navigation">
         <i id="barnav" class="fa fa-navicon fa-lg"></i>
       </button>
+
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item" data-aos="fade-down" data-aos-duration="450" data-aos-once="true" >
-            <a id="nav-item" class="nav-link" href="#about-me">About</a>
-          </li>
-          <li class="nav-item" data-aos="fade-down" data-aos-duration="600" data-aos-once="true" >
-            <a id="nav-item" class="nav-link" href="#education-section">Education</a>
-          </li>
-          <li class="nav-item" data-aos="fade-down" data-aos-duration="750" data-aos-once="true" >
-            <a id="nav-item" class="nav-link" href="#projects_section">Projects</a>
-          </li>
-          <li class="nav-item" data-aos="fade-down" data-aos-duration="900" data-aos-once="true" >
-            <a id="nav-item" class="nav-link" href="#footer">Contact</a>
-          </li>
+          <div data-aos="zoom-in" data-aos-duration="450" data-aos-once="true">
+            <li class="nav-item"  >
+              <a id="nav-item" class="nav-link" href="#about-me">About</a>
+            </li>
+          </div>
+          <div data-aos="zoom-in" data-aos-duration="600" data-aos-once="true">
+            <li class="nav-item"  >
+              <a id="nav-item" class="nav-link" href="#education-section">Education</a>
+            </li>
+          </div>
+          <div data-aos="zoom-in" data-aos-duration="750" >
+            <li class="nav-item" >
+              <a id="nav-item" class="nav-link" href="#projects_section">Projects</a>
+            </li>
+          </div>
+          <div data-aos="zoom-in" data-aos-duration="900" data-aos-once="true" >
+            <li class="nav-item" >
+              <a id="nav-item" class="nav-link" href="#footer">Contact</a>
+            </li>
+          </div>
+    
+         
+      
         </ul>
       </div>
     </nav>
@@ -56,14 +71,17 @@
     <!--Header-->
     <div class="jumbotron jumbotron-fluid">
         <div  class="heading">
-          <h5 id="hi-title" data-aos="fade" data-aos-duration="300" data-aos-once="true"  data-aos-delay="400">Hi, my name is</h5>
-          <h1 id="bemin-title" data-aos="fade" data-aos-duration="500" data-aos-once="true" data-aos-delay="500">Bemin Shaker.</h1>
-          <h1 class="aspire" data-aos="fade-up" data-aos-duration="550" data-aos-once="true"  data-aos-delay="600" >
-            <a data-aos-delay="600" href="" class="typewrite" data-period="2000" data-type='[ "I am an aspiring developer.", "I love to code.", "I like to design things.", "I build things for the web." ]'>
+          <h5 id="hi-title" data-aos="fade-up" data-aos-duration="300" data-aos-once="true"  data-aos-delay="500">Hi, my name is</h5>
+          <div data-aos="fade-up" data-aos-duration="600" data-aos-once="true" data-aos-delay="600"><h1 id="bemin-title">Bemin Shaker.</h1></div>
+          <div data-aos="fade-up" data-aos-duration="800" data-aos-once="true"  data-aos-delay="700"><h1 class="aspire">
+            <a  href="" class="typewrite" data-period="2000" data-type='[ "I am an aspiring developer.", "I love to code.", "I like to design things.", "I build things for the web." ]'>
               <span class="wrap"  ></span>
             </a>
           </h1>
-          <a href="./assets/resume.pdf" target="_blank" data-aos="fade-up" data-aos-duration="700" data-aos-once="true"  data-aos-delay="600"><button id='view-resume-btn' type="button" class="btn btn-outline-dark">View Resume</button></a>
+        </div>
+        <div data-aos="fade-up" data-aos-duration="800" data-aos-once="true"  data-aos-delay="600">
+          <a href="./assets/resume.pdf" target="_blank" ><button id='view-resume-btn' type="button" class="btn btn-outline-dark">View Resume</button></a>
+        </div>
         </div>
 
     </div>
@@ -252,7 +270,7 @@
     </script>
     <script>
       $(window).scroll(function() {
-    if ($(window).scrollTop() > 400) {
+    if ($(window).scrollTop() > 100) {
         $('#navBar').addClass('floatingNav');
     } else {
         $('#navBar').removeClass('floatingNav');
